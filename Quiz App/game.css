@@ -1,0 +1,97 @@
+.choice-container {
+    display:flex;
+    margin-bottom: 0.5rem;
+    font-size: 1.8rem;
+    width: 100%;
+    /* width: 30rem; */
+    border: 2px solid #588f77;
+    background-color: white;
+}
+
+.choice-container:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 #588f77ea;
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+}
+
+.choice-prefix {
+    padding: 1.5rem 2.5rem;
+    background-color: #588f77;
+    color: white;
+}
+
+.choice-text {
+    padding: 1.5rem;
+    width: 100%;
+}
+
+.correct{
+    background-color: #00ff3c;
+}
+
+.incorrect{
+    background-color: #ff0019;
+}
+
+/* HUD */
+
+#hud {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hud-prefix {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.hud-main-text {
+    text-align: center;
+}
+
+#progressBar {
+    width: 20rem;
+    height: 4rem;
+    border: 0.3rem solid #588f77;
+    margin-top: 1.5rem;
+}
+
+#progressBarFull {
+    height: 3.6rem;
+    background-color: #588f77;
+    width: 0%;
+}
+
+/* LOADER */
+
+#loader{
+    border: 1.6rem solid #093924;
+    border-radius: 50%;
+    border-top: 1.6rem solid #e6f9f100;
+    width: 12rem;
+    height: 12rem;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .choice-container {
+      width: 100%;
+    }
+
+    h1 {
+        font-size: 3.6rem;
+        margin-bottom: 3rem;
+      }
+  }
+  
